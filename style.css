@@ -1,0 +1,218 @@
+/* =========================
+   RÉGLAGES GÉNÉRAUX
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   EN-TÊTE
+========================= */
+
+header {
+  background-color: #123c69;
+  color: white;
+  padding: 20px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+/* =========================
+   MENU
+========================= */
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #5bc0eb;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+
+  background-color: white;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #123c69;
+}
+
+section h3 {
+  color: #1769aa;
+}
+
+/* =========================
+   LIENS
+========================= */
+
+section a {
+  color: #1769aa;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+  display: flex;
+  gap: 20px;
+}
+
+.services article {
+  flex: 1;
+  padding: 20px;
+
+  background-color: #f5f7fa;
+
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.services article h3 {
+  margin-top: 0;
+}
+
+/* =========================
+   FORMULAIRE
+========================= */
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1769aa;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* =========================
+   BOUTON
+========================= */
+
+button {
+  margin-top: 20px;
+
+  padding: 12px 25px;
+
+  background-color: #1769aa;
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #123c69;
+}
+
+/* =========================
+   PIED DE PAGE
+========================= */
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+
+  background-color: #123c69;
+  color: white;
+
+  text-align: center;
+}
+
+/* =========================
+   VERSION MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  section {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+}
